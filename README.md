@@ -1,4 +1,4 @@
-# Academic Project Page Template
+# iSafetyBench: A video-language benchmark for safety in industrial environment
 This is an academic paper project page template.
 
 
