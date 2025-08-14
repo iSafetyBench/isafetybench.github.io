@@ -106,7 +106,7 @@
   </section>
 
 
-<!-- Dataset videos -->
+<!-- Normal Dataset videos -->
 <section class="hero is-small">
   <div class="container is-max-desktop">
     <div class="hero-body">
@@ -121,10 +121,31 @@
         </div>
         <div class="column is-half">
           <div style="text-align: center;">
-            <img src="static/images/hazard.gif" alt="Dangerous/Hazard scenario" class="teaser-image"/>
+            <img src="static/images/category_distribution.png" alt="Dangerous/Hazard scenario" class="teaser-image"/>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End Dataset videos -->
+
+<!-- Hazard Dataset videos -->
+<section class="hero is-small">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <div class="columns is-vcentered">
+        <div class="column is-half">
+          <div style="text-align: center;">
+            <img src="static/images/hazard.gif" alt="Normal scenario" class="teaser-image"/>
             <h2 class="subtitle has-text-centered">
               Dangerous/Hazard scenarios
             </h2>
+          </div>
+        </div>
+        <div class="column is-half">
+          <div style="text-align: center;">
+            <img src="static/images/accident_category_distribution.png" alt="Dangerous/Hazard scenario" class="teaser-image"/>
           </div>
         </div>
       </div>
@@ -137,9 +158,9 @@
 <section class="hero teaser">
   <div class="container is-max-desktop">
     <div class="hero-body" style="text-align: center;">
-      <img src="static/images/model_scores.png" alt="MY ALT TEXT"/>
+      <img src="static/images/model_scores2.png" alt="MY ALT TEXT"/>
       <h4 class="subtitle has-text-centered">
-        Performance Analysis Across Categories: Accuracy distribution across action categories for the four top-performing models.
+        Performance comparison of models
       </h4>
     </div>
   </div>
@@ -154,7 +175,7 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            Recent advances in vision-language models (VLMs) have enabled impressive generalization across diverse video understanding tasks under zero-shot settings. However, their capabilities in high-stakes industrial domains—where recognizing both routine operations and safety-critical anomalies is essential—remain largely underexplored. To address this gap, we introduce <i><b>iSafetyBench</b></i>, a new video-language benchmark specifically designed to evaluate model performance in industrial environments across both normal and hazardous scenarios. iSafetyBench comprises <i><b>1,100 video clips</b></i> sourced from real-world industrial settings, annotated with <i><b>open-vocabulary, multi-label action tags</b></i> spanning <i><b>98 routine and 67 hazardous</b></i> action categories. Each clip is paired with <i><b>multiple-choice questions</b></i> for both single-label and multi-label evaluation, enabling fine-grained assessment of VLMs in both standard and safety-critical contexts. We evaluate <i><b>eight state-of-the-art video-language models</b></i> under zero-shot conditions. Despite their strong performance on existing video benchmarks, these models struggle with iSafetyBench—particularly in recognizing hazardous activities and in multi-label scenarios. Our results reveal significant performance gaps, underscoring the need for more robust, safety-aware multimodal models for industrial applications. iSafetyBench provides a first-of-its-kind testbed to drive progress in this direction.
+            Recent advances in vision-language models (VLMs) have enabled impressive generalization across diverse video understanding tasks under zero-shot settings. However, their capabilities in high-stakes industrial domains—where recognizing both routine operations and safety-critical anomalies is essential—remain largely underexplored. To address this gap, we introduce <b>iSafetyBench</b>, a new video-language benchmark specifically designed to evaluate model performance in industrial environments across both normal and hazardous scenarios. iSafetyBench comprises <b>1,100 video clips</b>sourced from real-world industrial settings, annotated with <b>open-vocabulary, multi-label action tags</b>spanning <b>98 routine and 67 hazardous</b>action categories. Each clip is paired with <b>multiple-choice questions</b>for both single-label and multi-label evaluation, enabling fine-grained assessment of VLMs in both standard and safety-critical contexts. We evaluate <b>eight state-of-the-art video-language models</b>under zero-shot conditions. Despite their strong performance on existing video benchmarks, these models struggle with iSafetyBench—particularly in recognizing hazardous activities and in multi-label scenarios. Our results reveal significant performance gaps, underscoring the need for more robust, safety-aware multimodal models for industrial applications. iSafetyBench provides a first-of-its-kind testbed to drive progress in this direction.
           </p>
         </div>
       </div>
@@ -167,7 +188,7 @@
 <section class="hero is-small">
   <div class="hero-body">
     <div class="container is-max-desktop">
-      <h2 class="title is-3">Dataset Comparison</h2>
+      <h2 class="subtitle has-text-centered">Comparison with existing datasets</h2>
       <div class="content">
         <table class="table is-bordered is-striped is-narrow is-hoverable">
           <thead>
@@ -223,7 +244,7 @@
               <td>35</td>
               <td>21</td>
               <td>0</td>
-              <td>20<sup>*</sup></td>
+              <td>20</td>
             </tr>
             <tr>
               <td>OpenPack</td>
