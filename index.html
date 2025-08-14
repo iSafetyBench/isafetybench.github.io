@@ -55,76 +55,96 @@
             <h1 class="title is-1 publication-title">iSafetyBench: A video-language benchmark for safety in industrial environment</h1>
             <div class="is-size-5 publication-authors">
               <!-- Paper authors -->
+              <span class="author-block"><a href="https://raiyaan.xyz/" target="_blank">Raiyaan Abdullah</a>,</span>
+              <span class="author-block"><a href="https://www.crcv.ucf.edu/person/rawat/" target="_blank">Yogesh Singh Rawat</a>,</span>
               <span class="author-block">
-                <a href="https://raiyaan.xyz/" target="_blank">Raiyaan Abdullah</a>,</span>
-                <span class="author-block">
-                  <a href="https://www.crcv.ucf.edu/person/rawat/" target="_blank">Yogesh Singh Rawat</a>,</span>
-                  <span class="author-block">
-                    <a href="https://mse.ucf.edu/person/shrutivyas/" target="_blank">Shruti Vyas</a></span>
-                  </span>
-                  </div>
+                <a href="https://mse.ucf.edu/person/shrutivyas/" target="_blank">Shruti Vyas</a>
+              </span>
+            </div>
 
-                  <div class="is-size-5 publication-authors">
-                    <span class="author-block">University of Central Florida<br>VISION'25 Workshop - ICCVW 25</span>
-                  </div>
+            <div class="is-size-5 publication-authors">
+              <span class="author-block">University of Central Florida<br>VISION'25 Workshop - ICCVW 25</span>
+            </div>
 
-                  <div class="column has-text-centered">
-                    <div class="publication-links">
-                         <!-- Arxiv PDF link -->
-                      <span class="link-block">
-                        <a href="https://arxiv.org/abs/2508.00399" target="_blank"
-                        class="external-link button is-normal is-rounded is-dark">
-                        <span class="icon">
-                          <i class="fas fa-file-pdf"></i>
-                        </span>
-                        <span>Paper</span>
-                      </a>
+            <div class="column has-text-centered">
+              <div class="publication-links">
+                <!-- Arxiv PDF link -->
+                <span class="link-block">
+                  <a href="https://arxiv.org/abs/2508.00399" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
                     </span>
+                    <span>Paper</span>
+                  </a>
+                </span>
 
-                  <!-- Github link -->
-                  <span class="link-block">
-                    <a href="https://github.com/iSafetyBench/data" target="_blank"
+                <!-- Github link -->
+                <span class="link-block">
+                  <a href="https://github.com/iSafetyBench/data" target="_blank"
                     class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
                       <i class="fab fa-github"></i>
                     </span>
-                    <span>Dataset</span>
+                    <span>Code</span>
                   </a>
                 </span>
+
+                <!-- Hugging Face link -->
+                <span class="link-block">
+                  <a href="https://huggingface.co/datasets/raiyaanabdullah/isafety-bench" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span>🤗 Dataset</span>
+                  </a>
+                </span>
+              </div>
             </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+<!-- Dataset videos -->
+<section class="hero is-small">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <div class="columns is-vcentered">
+        <div class="column is-half">
+          <div style="text-align: center;">
+            <img src="static/images/normal.gif" alt="Normal scenario" class="teaser-image"/>
+            <h2 class="subtitle has-text-centered">
+              Normal scenarios
+            </h2>
+          </div>
+        </div>
+        <div class="column is-half">
+          <div style="text-align: center;">
+            <img src="static/images/hazard.gif" alt="Dangerous/Hazard scenario" class="teaser-image"/>
+            <h2 class="subtitle has-text-centered">
+              Dangerous/Hazard scenarios
+            </h2>
           </div>
         </div>
       </div>
     </div>
   </div>
 </section>
+<!-- End Dataset videos -->
 
-
-<!-- Teaser video-->
+<!-- Model scores image-->
 <section class="hero teaser">
   <div class="container is-max-desktop">
     <div class="hero-body" style="text-align: center;">
-      <img src="static/images/normal.gif" alt="MY ALT TEXT"/>
-      <h2 class="subtitle has-text-centered">
-        Normal scenario
-      </h2>
+      <img src="static/images/model_scores.png" alt="MY ALT TEXT"/>
+      <h4 class="subtitle has-text-centered">
+        Performance Analysis Across Categories: Accuracy distribution across action categories for the four top-performing models.
+      </h4>
     </div>
   </div>
 </section>
-<!-- End teaser video -->
-
-<!-- Teaser video-->
-<section class="hero teaser">
-  <div class="container is-max-desktop">
-    <div class="hero-body" style="text-align: center;">
-      <img src="static/images/hazard.gif" alt="MY ALT TEXT"/>
-      <h2 class="subtitle has-text-centered">
-        Dangerous/Hazard scenario
-      </h2>
-    </div>
-  </div>
-</section>
-<!-- End teaser video -->
+<!-- End Model scores image -->
 
 <!-- Paper abstract -->
 <section class="section hero is-light">
@@ -134,7 +154,7 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            Recent advances in vision-language models (VLMs) have enabled impressive generalization across diverse video understanding tasks under zero-shot settings. However, their capabilities in high-stakes industrial domains—where recognizing both routine operations and safety-critical anomalies is essential—remain largely underexplored. To address this gap, we introduce iSafetyBench, a new video-language benchmark specifically designed to evaluate model performance in industrial environments across both normal and hazardous scenarios. iSafetyBench comprises 1,100 video clips sourced from real-world industrial settings, annotated with open-vocabulary, multi-label action tags spanning 98 routine and 67 hazardous action categories. Each clip is paired with multiple-choice questions for both single-label and multi-label evaluation, enabling fine-grained assessment of VLMs in both standard and safety-critical contexts. We evaluate eight state-of-the-art video-language models under zero-shot conditions. Despite their strong performance on existing video benchmarks, these models struggle with iSafetyBench—particularly in recognizing hazardous activities and in multi-label scenarios. Our results reveal significant performance gaps, underscoring the need for more robust, safety-aware multimodal models for industrial applications. iSafetyBench provides a first-of-its-kind testbed to drive progress in this direction.
+            Recent advances in vision-language models (VLMs) have enabled impressive generalization across diverse video understanding tasks under zero-shot settings. However, their capabilities in high-stakes industrial domains—where recognizing both routine operations and safety-critical anomalies is essential—remain largely underexplored. To address this gap, we introduce <i><b>iSafetyBench</b></i>, a new video-language benchmark specifically designed to evaluate model performance in industrial environments across both normal and hazardous scenarios. iSafetyBench comprises <i><b>1,100 video clips</b></i> sourced from real-world industrial settings, annotated with <i><b>open-vocabulary, multi-label action tags</b></i> spanning <i><b>98 routine and 67 hazardous</b></i> action categories. Each clip is paired with <i><b>multiple-choice questions</b></i> for both single-label and multi-label evaluation, enabling fine-grained assessment of VLMs in both standard and safety-critical contexts. We evaluate <i><b>eight state-of-the-art video-language models</b></i> under zero-shot conditions. Despite their strong performance on existing video benchmarks, these models struggle with iSafetyBench—particularly in recognizing hazardous activities and in multi-label scenarios. Our results reveal significant performance gaps, underscoring the need for more robust, safety-aware multimodal models for industrial applications. iSafetyBench provides a first-of-its-kind testbed to drive progress in this direction.
           </p>
         </div>
       </div>
@@ -143,24 +163,144 @@
 </section>
 <!-- End paper abstract -->
 
-
-
+<!-- Dataset comparison table -->
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <h2 class="title is-3">Dataset Comparison</h2>
+      <div class="content">
+        <table class="table is-bordered is-striped is-narrow is-hoverable">
+          <thead>
+            <tr>
+              <th>Dataset</th>
+              <th>Normal<br>scenarios</th>
+              <th>Dangerous<br>scenarios</th>
+              <th>Multi-label</th>
+              <th>Textual<br>data</th>
+              <th>Environment<br>type(s)</th>
+              <th>Set<br>type</th>
+              <th># Normal<br>actions</th>
+              <th># Non-critical<br>anomaly actions</th>
+              <th># Danger/hazard<br>actions</th>
+              <th># High-level<br>categories</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>UCF-Crime</td>
+              <td><span style="color: green;">✔</span></td>
+              <td><span style="color: green;">✔</span></td>
+              <td><span style="color: red;">✖</span></td>
+              <td><span style="color: red;">✖</span></td>
+              <td>Multiple</td>
+              <td>Closed</td>
+              <td>0</td>
+              <td>0</td>
+              <td>13</td>
+              <td>0</td>
+            </tr>
+            <tr>
+              <td>InHARD</td>
+              <td><span style="color: green;">✔</span></td>
+              <td><span style="color: red;">✖</span></td>
+              <td><span style="color: red;">✖</span></td>
+              <td><span style="color: red;">✖</span></td>
+              <td>Single</td>
+              <td>Closed</td>
+              <td>74</td>
+              <td>0</td>
+              <td>0</td>
+              <td>14</td>
+            </tr>
+            <tr>
+              <td>TIMo</td>
+              <td><span style="color: green;">✔</span></td>
+              <td><span style="color: red;">✖</span></td>
+              <td><span style="color: red;">✖</span></td>
+              <td><span style="color: red;">✖</span></td>
+              <td>Single</td>
+              <td>Closed</td>
+              <td>35</td>
+              <td>21</td>
+              <td>0</td>
+              <td>20<sup>*</sup></td>
+            </tr>
+            <tr>
+              <td>OpenPack</td>
+              <td><span style="color: green;">✔</span></td>
+              <td><span style="color: green;">✔</span></td>
+              <td><span style="color: red;">✖</span></td>
+              <td><span style="color: red;">✖</span></td>
+              <td>Single</td>
+              <td>Closed</td>
+              <td>43</td>
+              <td>44</td>
+              <td>1</td>
+              <td>17</td>
+            </tr>
+            <tr>
+              <td>Safe/Unsafe Behaviours</td>
+              <td><span style="color: green;">✔</span></td>
+              <td><span style="color: green;">✔</span></td>
+              <td><span style="color: red;">✖</span></td>
+              <td><span style="color: red;">✖</span></td>
+              <td>Single</td>
+              <td>Closed</td>
+              <td>4</td>
+              <td>0</td>
+              <td>4</td>
+              <td>2</td>
+            </tr>
+            <tr>
+              <td>Construction Meta Action</td>
+              <td><span style="color: green;">✔</span></td>
+              <td><span style="color: green;">✔</span></td>
+              <td><span style="color: red;">✖</span></td>
+              <td><span style="color: red;">✖</span></td>
+              <td>Single</td>
+              <td>Closed</td>
+              <td>1</td>
+              <td>0</td>
+              <td>6</td>
+              <td>0</td>
+            </tr>
+            <tr>
+              <td><strong>iSafetyBench (Ours)</strong></td>
+              <td><span style="color: green;">✔</span></td>
+              <td><span style="color: green;">✔</span></td>
+              <td><span style="color: green;">✔</span></td>
+              <td><span style="color: green;">✔</span></td>
+              <td>Multiple</td>
+              <td>Open</td>
+              <td>98</td>
+              <td>0</td>
+              <td>67</td>
+              <td>18</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End dataset comparison table -->
 
 <!--BibTex citation -->
   <section class="section" id="BibTeX">
     <div class="container is-max-desktop content">
       <h2 class="title">BibTeX</h2>
-      <pre><code>
-        @misc{abdullah2025isafetybenchvideolanguagebenchmarksafety,
-            title={iSafetyBench: A video-language benchmark for safety in industrial environment}, 
-            author={Raiyaan Abdullah and Yogesh Singh Rawat and Shruti Vyas},
-            year={2025},
-            eprint={2508.00399},
-            archivePrefix={arXiv},
-            primaryClass={cs.CV},
-            url={https://arxiv.org/abs/2508.00399}, 
+      <pre>
+        <code>
+        @InProceedings{Abdullah_2025_ICCV,
+            author    = {Abdullah, Raiyaan and Rawat, Yogesh Singh and Vyas, Shruti},
+            title     = {iSafetyBench: A video-language benchmark for safety in industrial environment},
+            booktitle = {Proceedings of the IEEE/CVF International Conference on Computer Vision (ICCV) Workshops},
+            month     = {October},
+            year      = {2025},
+            pages     = {}
         }
-    </code></pre>
+        </code>
+      </pre>
     </div>
 </section>
 <!--End BibTex citation -->
